@@ -1,39 +1,48 @@
 # Übung 1.1 #
 
-## Vorbereitung ##
+> Erstellen Sie für jede Übung einen eigenen Unterordner damit alles schön organisiert ist.
 
-1. Erstellen Sie im Home Directory einen Ordner `M151`.
-In diesem Ordner werden alle PHP Dateien vom Modul abgelegt. Ich empfehle ausserdem diesen Ordner in ein GIT Repository abzulegen.
+> Vergessen Sie nicht jeweils am Ende der Lektion die Änderungen auf GIT zu pushen
 
-1. Erstellen Sie einen Ordner für alle Übungen, `Uebungen`, und darin einen Ordner für diese Übung `Uebung1-1`
+## Ziel der Übung ##
 
-> Diesen Schritt sollten Sie für alle kommenden Übungen wiederholen. So sind alle Übungsdateien an einem Ort übersichtlich abgelegt.
+- Altes CSS Wissen reaktivieren
+- Grobniveau des CSS Wissens evaluieren
+- Vorstellung der Lernenden
 
-> Da wir mit der Konsole arbeiten sollten Sie möglichst keine Umlaute oder Punkte als Ordner- und Dateinamen verwenden.
+## Aufgabestellung ##
 
-## Der erste Webserver ##
+Erstellen Sie eine HTML Seite in welcher Sie Sich als Person vorstellen.
 
-1. Erstellen Sie im Ordner zu dieser Übung eine Datei namens `index.php`. Fügen Sie in dieser Datei folgenden Inhalt ein:
-        
-    ```php
-    <?php
-        phpinfo();
-    ?>
-    ```
+Folgende Punkte sollten darauf vorhanden sein:
 
-1. Öffnen Sie eine Konsole und starten Sie mit folgenden Befehlen den integrierten Webserver:
+- Name/Vorname/Bild
+- Wohnort
+- Alter
+- Arbeitgeber
+    - Arbeitsgebiet (Web-Entwicklung, Datenbankmanagement usw.)
+    - Erfahrungen mit CSS beim Arbeitgeber
+- Hobbies
+- persönliche Motivation für den Informatikberuf
+- persönliche Ansprüche an das Modul 152
 
-    ```shell script
-    cd ~/m151/Uebungen/Uebung1-1
-    php -S 0.0.0.0:8000
-    ```
+Verwenden Sie hierfür mindestens folgende HTML Elemente:
 
-1. Öffnen Sie die URL `127.0.0.1:8000` in einem Browser.
+- `<div>`
+- `<table>`
+- `<img>`
+- `<h1>/<h2>/<h3>` - Tags
 
-> Den Server können Sie mit `Ctrl+C` beenden.
+Formattieren Sie die Seite mit CSS. Sie können das CSS entweder inline schreiben (`<style>`)
+oder in eine eigene Datei auslagern (`<link>`)
 
-## Fragen / Aufgaben ##
+## Gestaltungskriterien ##
 
-- [ ] Was sehen Sie?
-- [ ] Was bedeutet das -S vom PHP Befehl?
-- [ ] Ersetzen Sie den PHP Code im `index.php` durch anderen PHP Code und kontrollieren Sie ob die Ausgabe im Browser übereinstimmt.
+- Keine!
+
+> Es geht lediglich darum das vorhanden Wissen zu aktivieren und den allgemeinen Stand der Klasse
+> zu prüfen - die Techniken um eine Seite ansprechend zu gestalten werden wir im Laufe des Moduls besprechen.
+
+## Vorstellungsrunde ##
+
+Im Anschluss der Übung stellen sich alle Lernenden mithilfe diese Vorstellungsseite vor.
