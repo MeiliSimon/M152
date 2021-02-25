@@ -1,0 +1,49 @@
+.person{
+    margin: 20px;
+    display: inline-block;
+    border:3px gray solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    box-shadow: #777279 1px 1px;
+    background-color: darkgray;
+    
+    &__image{ //Wird zu person__image
+        border-radius: 50%; 
+    }
+    &__title{ //Wird zu person__title
+        margin:20px;
+    }
+    &__text{ //Wird zu person__text
+        margin:20px;
+    }
+    &__button{ //Wird zu person__button
+        background-color:green;
+        border:none;
+        width: 100%;
+        border-radius: 5px;
+        &:hover{
+            background-color: darkgreen;
+        }
+    }
+    &--manager{ //Wird zu person--manager
+        background-color: mediumblue;
+        
+        .person__button{
+            background-color: magenta;
+            &:hover{
+                background-color: darkmagenta;
+            }
+        }
+        &:hover{
+            transform: scale(1.1);
+            background-color: blue;
+            box-shadow: gray;
+        }
+    }
+    &:hover{
+        transform: scale(1.1);
+        background-color: dimgray;
+        box-shadow: gray;
+    }
+}

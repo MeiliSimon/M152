@@ -1,0 +1,39 @@
+.person {
+  margin: 20px;
+  display: inline-block;
+  border: 3px gray solid;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  -webkit-box-shadow: #777279 1px 1px;
+          box-shadow: #777279 1px 1px;
+  background-color: darkgray;
+}
+
+.person__image {
+  border-radius: 50%;
+}
+
+.person__title {
+  margin: 20px;
+}
+
+.person__text {
+  margin: 20px;
+}
+
+.person__button {
+  background-color: green;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.person--manager {
+  background-color: mediumblue;
+}
+
+.person--manager .person__button {
+  background-color: magenta;
+}
+/*# sourceMappingURL=style.css.map */
