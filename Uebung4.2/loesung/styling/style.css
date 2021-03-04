@@ -1,0 +1,70 @@
+.container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-areas: "magenta magenta lachs lachs lachs lachs lachs violet"  "magenta magenta darkgreen darkgreen baige baige lila lila"  "magenta magenta darkgreen darkgreen baige baige lila lila" "magenta magenta lightgreen lightgreen lightgreen lightgreen lila lila";
+}
+
+magenta {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: magenta;
+  background-color: magenta;
+}
+
+lachs {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: lachs;
+  background-color: darksalmon;
+}
+
+darkgreen {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: darkgreen;
+  background-color: darkgreen;
+}
+
+baige {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: baige;
+  background-color: sandybrown;
+}
+
+violet {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  grid-area: violet;
+  background-color: purple;
+}
+
+lightgreen {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: lightgreen;
+  background-color: lightgreen;
+}
+
+lila {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: lila;
+  background-color: pink;
+}
+/*# sourceMappingURL=style.css.map */

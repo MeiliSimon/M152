@@ -1,0 +1,42 @@
+.container { 
+    height:100vh; 
+    display: grid; 
+    grid-template-rows: 20% 20% 20% 20% 20% ; 
+    grid-template-columns: 20% 20% 20% 20%; 
+    grid-template-areas:  
+      "magenta magenta lachs lachs lachs lachs lachs violet" 
+      "magenta magenta darkgreen darkgreen baige baige lila lila" 
+      "magenta magenta darkgreen darkgreen baige baige lila lila"
+      "magenta magenta lightgreen lightgreen lightgreen lightgreen lila lila"
+    ; 
+  }
+  magenta{
+      grid-area: magenta;
+      background-color: magenta;
+  }
+  lachs{
+    grid-area: lachs;
+    background-color: darksalmon;
+}
+darkgreen{
+  grid-area: darkgreen;
+    background-color: darkgreen;
+}
+baige{
+  grid-area: baige;
+    background-color: sandybrown;
+}
+violet{
+  grid-area: violet;
+  background-color: purple;
+}
+lightgreen{
+  grid-area: lightgreen;
+  background-color: lightgreen;
+}
+lila{
+  grid-area: lila;
+  background-color: pink;
+}
+
+
