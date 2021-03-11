@@ -2,67 +2,61 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 20% 20% 20% 20%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
-  -ms-grid-columns: 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20%;
-      grid-template-areas: "magenta magenta lachs lachs lachs lachs lachs violet"  "magenta magenta darkgreen darkgreen baige baige lila lila"  "magenta magenta darkgreen darkgreen baige baige lila lila" "magenta magenta lightgreen lightgreen lightgreen lightgreen lila lila";
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -ms-grid-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-areas: "red red blue blue blue blue blue blue black black black" "red red blue blue blue blue blue blue black black black" "lila lila yellow yellow yellow yellow yellow yellow green green green" "lila lila yellow yellow yellow yellow yellow yellow green green green" "lila lila yellow yellow yellow yellow yellow yellow green green green" "lila lila yellow yellow yellow yellow yellow yellow green green green" "lila lila white white white white white white pink pink pink" "lachs lachs brown brown brown brown brown brown green green green" "lachs lachs brown brown brown brown brown brown green green green";
 }
 
-magenta {
+red {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: magenta;
-  background-color: magenta;
+  grid-area: red;
+  background-color: red;
+}
+
+blue {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-area: blue;
+  background-color: blue;
 }
 
 lachs {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 5;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: lachs;
   background-color: darksalmon;
 }
 
-darkgreen {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: darkgreen;
-  background-color: darkgreen;
+pink {
+  -ms-grid-row: 7;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: pink;
+  background-color: magenta;
 }
 
-baige {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-area: baige;
-  background-color: sandybrown;
-}
-
-violet {
-  -ms-grid-row: 1;
-  -ms-grid-column: 8;
-  grid-area: violet;
-  background-color: purple;
-}
-
-lightgreen {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 4;
-  grid-area: lightgreen;
-  background-color: lightgreen;
+green {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: green;
+  background-color: greenyellow;
 }
 
 lila {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: lila;
   background-color: pink;

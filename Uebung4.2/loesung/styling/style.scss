@@ -1,42 +1,49 @@
-.container { 
-    height:100vh; 
-    display: grid; 
-    grid-template-rows: 20% 20% 20% 20% 20% ; 
-    grid-template-columns: 20% 20% 20% 20%; 
-    grid-template-areas:  
-      "magenta magenta lachs lachs lachs lachs lachs violet" 
-      "magenta magenta darkgreen darkgreen baige baige lila lila" 
-      "magenta magenta darkgreen darkgreen baige baige lila lila"
-      "magenta magenta lightgreen lightgreen lightgreen lightgreen lila lila"
-    ; 
-  }
-  magenta{
-      grid-area: magenta;
-      background-color: magenta;
-  }
-  lachs{
-    grid-area: lachs;
-    background-color: darksalmon;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "red red blue blue blue blue blue blue black black black"
+    "red red blue blue blue blue blue blue black black black"
+    "lila lila yellow yellow yellow yellow yellow yellow green green green"
+    "lila lila yellow yellow yellow yellow yellow yellow green green green"
+    "lila lila yellow yellow yellow yellow yellow yellow green green green"
+    "lila lila yellow yellow yellow yellow yellow yellow green green green"
+    "lila lila white white white white white white pink pink pink"
+    "lachs lachs brown brown brown brown brown brown green green green"
+    "lachs lachs brown brown brown brown brown brown green green green"
+  ;
 }
-darkgreen{
-  grid-area: darkgreen;
-    background-color: darkgreen;
+
+
+red {
+  grid-area: red;
+  background-color: red;
 }
-baige{
-  grid-area: baige;
-    background-color: sandybrown;
+
+blue {
+  grid-area: blue;
+  background-color: blue;
 }
-violet{
-  grid-area: violet;
-  background-color: purple;
+
+lachs {
+  grid-area: lachs;
+  background-color: darksalmon;
 }
-lightgreen{
-  grid-area: lightgreen;
-  background-color: lightgreen;
+
+
+pink {
+  grid-area: pink;
+  background-color: magenta;
 }
-lila{
+
+green {
+  grid-area: green;
+  background-color: greenyellow;
+}
+
+lila {
   grid-area: lila;
   background-color: pink;
 }
-
-
