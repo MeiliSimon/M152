@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Parisienne-Regular;
+  src: url(../font/Parisienne-Regular.ttf);
+  font-weight: Regular;
+}
+
+@font-face {
+  font-family: BlackOpsOne-Regular;
+  src: url(../font/BlackOpsOne-Regular.ttf);
+}
+
+div, button {
+  font-family: "BlackOpsOne-Regular";
+}
+
+.person {
+  margin: 20px;
+  display: inline-block;
+  border: 3px gray solid;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  -webkit-box-shadow: #777279 1px 1px;
+          box-shadow: #777279 1px 1px;
+  background-color: darkgray;
+}
+
+.person__image {
+  border-radius: 50%;
+}
+
+.person__title {
+  margin: 20px;
+}
+
+.person__text {
+  margin: 20px;
+}
+
+.person__button {
+  background-color: green;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.person__button:hover {
+  background-color: darkgreen;
+}
+
+.person--manager {
+  background-color: mediumblue;
+}
+
+.person--manager .person__button {
+  background-color: magenta;
+}
+
+.person--manager .person__button:hover {
+  background-color: darkmagenta;
+}
+
+.person--manager:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: blue;
+  -webkit-box-shadow: gray;
+          box-shadow: gray;
+}
+
+.person:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: dimgray;
+  -webkit-box-shadow: gray;
+          box-shadow: gray;
+}
+/*# sourceMappingURL=style.css.map */
