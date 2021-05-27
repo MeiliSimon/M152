@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Videoplayer</title>
+        <link rel="stylesheet" href="styling/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <div>
+                <video id="video" width="320" height="240" controls>
+                    <source src="media/Video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="controls">
+                <span>
+                    <button id="playOrPause">play</button>
+                </span>
+                <span>
+                    <input type ="range" min="0.5" max="2" value="1" id ="speed" step="0.5">
+                    <p id="textSpeed">1</p>
+                </span>
+                <span>
+                    <input type="checkbox" id="loop">
+                    <p>loop</p>
+                </span>
+            </div>
+
+        </div>
+          <script>
+             var vid = document.getElementById("video");
+             var playOrPause = document.getElementById("playOrPause");
+             var speed =document.getElementById("speed");
+             var textSpeed =document.getElementById("textSpeed");
+             var loop = document.getElementById("loop");
+
+             playOrPause.onclick = function(){
+                 vid.play();
+             }
+             speed.oninput = function(){
+                vid.playbackRate = this.value;
+                textSpeed.innerHTML=this.value;
+             }
+             loop.onchange =function(){
+                 vid.loop =loop.checked;
+             }
+          </script>
+    </body>
+</html>
